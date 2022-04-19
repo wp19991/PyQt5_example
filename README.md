@@ -15,7 +15,7 @@
 🎯Includes the taskbar minimize icon.
 <div align="center"><img src="doc/img/4.png" width="50%" alt=""><img src="doc/img/5.png" width="50%" alt=""></div>
 
-## 项目文件结构
+## Project file structure
 
 - doc  (Document related)
 - config  (Program initialization configuration related)
