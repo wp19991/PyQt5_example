@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>829</width>
+    <height>598</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../res/app.qrc">
+    <normaloff>:/icon/app.ico</normaloff>:/icon/app.ico</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget#centralwidget{
+ border-image: url(:/img/fish.png);
+}
+
+QWidget#widget{
+ background-color:rgba(0,0,0,0);
+}
+
+QTextBrowser#textBrowser{
+ background-color:rgba(0,0,0,0);
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QWidget" name="widget" native="true">
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QCheckBox" name="is_min_status_checkBox">
+         <property name="text">
+          <string>最小化到任务栏图标</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTextBrowser" name="textBrowser">
+         <property name="html">
+          <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'SimSun'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:10px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a name=&quot;cb_post_title_url&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://www.cnblogs.com/wowk/p/3162271.html&quot;&gt;&lt;span style=&quot; font-family:'PingFang SC','Microsoft YaHei','Helvetica Neue','Helvetica','Arial','sans-serif'; font-weight:600; text-decoration: underline; color:#4371a6; vertical-align:middle;&quot;&gt;Q&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'PingFang SC','Microsoft YaHei','Helvetica Neue','Helvetica','Arial','sans-serif'; font-weight:600; color:#4371a6; vertical-align:middle;&quot;&gt;t5：QSystemTrayIcon类实现程序托盘图标&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:10px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a name=&quot;cnblogs_post_body&quot;&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'PingFang SC','Microsoft YaHei','Helvetica Neue','Helvetica','Arial','sans-serif'; font-size:13px; color:#4b4b4b;&quot;&gt;w&lt;/span&gt;&lt;span style=&quot; font-family:'PingFang SC','Microsoft YaHei','Helvetica Neue','Helvetica','Arial','sans-serif'; font-size:13px; color:#4b4b4b;&quot;&gt;indows下，在许多应用程序中都会实现一个托盘图标，用于隐藏应用程序窗口时还能对该应用程序进行简单的操作，例如 QQ ，renren等程序&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:10px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'PingFang SC','Microsoft YaHei','Helvetica Neue','Helvetica','Arial','sans-serif'; font-size:13px; color:#4b4b4b;&quot;&gt;那么，在Qt中，如何实现呢？ 这就要用到Qt提供的 QSystemTrayIcon  这个类了。&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:10px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'PingFang SC','Microsoft YaHei','Helvetica Neue','Helvetica','Arial','sans-serif'; font-size:13px; color:#4b4b4b;&quot;&gt;来看看这个类中都有哪些常用的成员函数&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:10px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'PingFang SC','Microsoft YaHei','Helvetica Neue','Helvetica','Arial','sans-serif'; font-size:13px; color:#4b4b4b;&quot;&gt;首先是这个类的构造函数&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../res/app.qrc"/>
+ </resources>
+ <connections/>
+</ui>

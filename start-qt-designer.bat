@@ -1,0 +1,1 @@
+C:\DevelopmentTools\Miniconda3\miniconda3\envs\learn_pyqt5\Lib\site-packages\qt5_applications\Qt\bin\designer.exe

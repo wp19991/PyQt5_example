@@ -1,0 +1,6 @@
+pyqt5~=5.15.4
+PyQtChart
+pyqt5-tools
+loguru~=0.6.0
+tomlconfig~=1.2.1
+pyinstaller
