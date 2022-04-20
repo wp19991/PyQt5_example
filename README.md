@@ -10,8 +10,8 @@
 <div align="center"><img src="doc/img/1.png" width="200" alt=""></div>
 🎯Including login interface.
 <div align="center"><img src="doc/img/2.png" width="50%" alt=""></div>
-🎯Include main window.
-<div align="center"><img src="doc/img/3.png" width="50%" alt=""></div>
+🎯Include main window. Real time display of CPU utilization.
+<div align="center"><img src="doc/img/6.png" width="50%" alt=""></div>
 🎯Includes the taskbar minimize icon.
 <div align="center"><img src="doc/img/4.png" width="50%" alt=""><img src="doc/img/5.png" width="50%" alt=""></div>
 

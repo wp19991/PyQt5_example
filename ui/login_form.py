@@ -199,6 +199,8 @@ class Ui_Frame(object):
         self.min_pushButton.setObjectName("min_pushButton")
         self.close_pushButton = QtWidgets.QPushButton(self.widget)
         self.close_pushButton.setGeometry(QtCore.QRect(480, 40, 20, 20))
+        self.close_pushButton.setMinimumSize(QtCore.QSize(20, 20))
+        self.close_pushButton.setMaximumSize(QtCore.QSize(20, 20))
         self.close_pushButton.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         self.close_pushButton.setText("")
         self.close_pushButton.setObjectName("close_pushButton")

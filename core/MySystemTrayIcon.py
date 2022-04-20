@@ -80,7 +80,6 @@ class MySystemTrayIcon(QSystemTrayIcon):
         logger.info("显示主窗口")
         self.root.show()
         self.setupUi()
-        self.tray_menu.setStyleSheet(self.QMenuStyleSheet)
 
     def hide_event(self):
         logger.info("隐藏主窗口")

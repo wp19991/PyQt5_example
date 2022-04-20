@@ -8,8 +8,8 @@
 <div align="center"><img src="./img/1.png" width="200" alt=""></div>
 🎯包括了登录界面
 <div align="center"><img src="./img/2.png" width="50%" alt=""></div>
-🎯包括主窗口
-<div align="center"><img src="./img/3.png" width="50%" alt=""></div>
+🎯包括主窗口,实时显示cpu的利用率
+<div align="center"><img src="./img/6.png" width="50%" alt=""></div>
 🎯包括了任务栏最小化图标
 <div align="center"><img src="./img/4.png" width="50%" alt=""><img src="./img/5.png" width="50%" alt=""></div>
 
