@@ -14,8 +14,8 @@
    <string>Dialog</string>
   </property>
   <property name="windowIcon">
-   <iconset resource="../res/app.qrc">
-    <normaloff>:/icon/app.ico</normaloff>:/icon/app.ico</iconset>
+   <iconset>
+    <normaloff>:/icon/icon/关闭.ico</normaloff>:/icon/icon/关闭.ico</iconset>
   </property>
   <property name="styleSheet">
    <string notr="true">QTextEdit#textEdit{
@@ -29,7 +29,7 @@ QLabel#label{
 }
 
 QWidget#widget {
- border-image: url(:/img/fish.png);
+ border-image: url(:/img/image/fish.png);
  border-radius:10px;
  background-color: rgba(0,0,0,0);
 }
@@ -51,7 +51,7 @@ QPushButton#close_pushButton{
 
 QPushButton#close_pushButton:hover{
  background-size: cover;
- background-image: url(:/icon/close.svg);
+ background-image: url(:/icon/icon/close.svg);
 }
 
 QPushButton#min_pushButton{
@@ -61,7 +61,7 @@ QPushButton#min_pushButton{
 
 QPushButton#min_pushButton:hover{
  background-size: cover;
- background-image: url(:/icon/minimize.svg);
+ background-image: url(:/icon/icon/minimize.svg);
 }</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout_3">

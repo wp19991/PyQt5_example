@@ -3,8 +3,8 @@ import os
 from PyQt5.QtWidgets import QApplication
 from loguru import logger
 
-from utils import global_var as gl
-from config import logs
+from utils import global_var as gl, logs
+from utils.connect_mysql import db
 from win.login_form import login_form
 from win.splash.splash import SplashScreen
 
@@ -25,9 +25,6 @@ class App(QApplication):
 
         from win.main_win import main_win
         self.windows["main"] = main_win()
-        # 默认先显示登录界面
-        # self.windows["main"].show()
-        # 如果需要登录界面，就打开下面的注释，把上面self.windows["main"].show()注释掉
         self.windows["login"] = login_form(self.windows["main"])
         self.windows["login"].show()
 
@@ -40,4 +37,5 @@ class App(QApplication):
 if __name__ == "__main__":
     logs.setting()  # log 设置
     gl.__init()  # 全局变量
+    db.connect()
     App().run()

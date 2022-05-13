@@ -21,7 +21,7 @@
   </property>
   <property name="windowIcon">
    <iconset resource="../res/app.qrc">
-    <normaloff>:/icon/app.ico</normaloff>:/icon/app.ico</iconset>
+    <normaloff>:/icon/icon/首页.ico</normaloff>:/icon/icon/首页.ico</iconset>
   </property>
   <property name="styleSheet">
    <string notr="true">QWidget#centralwidget{

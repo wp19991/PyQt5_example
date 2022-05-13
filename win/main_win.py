@@ -5,7 +5,6 @@ from PyQt5.QtGui import QPainter
 from PyQt5.QtWidgets import QMainWindow, QSystemTrayIcon, QFileSystemModel, QTreeView
 from loguru import logger
 
-from config.core import Config
 from core.CpuLineChart import CpuLineChart
 from core.DynamicSpline import DynamicSpline
 from core.FileIconProvider import FileIconProvider
@@ -23,27 +22,12 @@ class main_win(QMainWindow, main_window):
         super(main_win, self).__init__()
         self.setupUi(self)
 
-        # 登录界面
-        # self.login = login_form(self)
-        # self.login.show()
-
-        self.config = Config.current()  # 读取配置文件
-        self.setStyleSheet(CommonHelper.read_qss_file(self.config.getSec("general")["skin"]))
-
-        self.config.getSec("advance")["autoexportqss"] = "1seees"
-        self.config.saveDefault()  # 保持配置文件
-
         # 程序托盘图标
         self.show_tray_icon = close_dialog(parent=self)
         self.tray_icon = MySystemTrayIcon()
         self.tray_icon.init(self)  # 将自己传进去
         self.tray_icon.show()
 
-        # 添加用户名的label
-        self.user_name_label = QtWidgets.QLabel()
-        self.user_name_label.setObjectName("user_name_label")
-        self.user_name_label.setText("还没有设置登录界面，请在app.py中打开注释")
-        self.verticalLayout.addWidget(self.user_name_label)
 
         # verticalLayout 添加 cpu动态折线图
         self.add_cpu_chart()

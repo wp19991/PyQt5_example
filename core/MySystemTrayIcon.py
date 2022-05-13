@@ -15,7 +15,7 @@ class MySystemTrayIcon(QSystemTrayIcon):
 
     def setupUi(self):
         self.icon = QtGui.QIcon()
-        self.icon.addPixmap(QtGui.QPixmap(":/icon/app.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.icon.addPixmap(QtGui.QPixmap(":/icon/icon/首页.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.setIcon(self.icon)
         '''
             Define and add steps to work with the system tray icon

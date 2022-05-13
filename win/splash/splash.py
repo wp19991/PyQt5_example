@@ -9,7 +9,7 @@ from win.splash.core import preimport
 
 class SplashScreen(QSplashScreen):
     def __init__(self):
-        pixmap = QPixmap(":/img/fish.png")
+        pixmap = QPixmap(":/img/image/fish.png")
         super(SplashScreen, self).__init__(pixmap)
 
         self.labelAlignment = int(Qt.AlignBottom | Qt.AlignHCenter | Qt.AlignAbsolute)

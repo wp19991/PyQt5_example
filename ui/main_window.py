@@ -17,7 +17,7 @@ class Ui_MainWindow(object):
         MainWindow.resize(561, 521)
         MainWindow.setMinimumSize(QtCore.QSize(500, 500))
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap(":/icon/app.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon.addPixmap(QtGui.QPixmap(":/icon/icon/首页.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         MainWindow.setWindowIcon(icon)
         MainWindow.setStyleSheet("QWidget#centralwidget{\n"
 " border-image: url(:/img/fish.png);\n"

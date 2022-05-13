@@ -16,7 +16,7 @@ class Ui_Dialog(object):
         Dialog.setObjectName("Dialog")
         Dialog.resize(377, 272)
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap(":/icon/app.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon.addPixmap(QtGui.QPixmap(":/icon/icon/关闭.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         Dialog.setWindowIcon(icon)
         Dialog.setStyleSheet("QTextEdit#textEdit{\n"
 " background-color: rgba(0,0,0,0);\n"
@@ -29,7 +29,7 @@ class Ui_Dialog(object):
 "}\n"
 "\n"
 "QWidget#widget {\n"
-" border-image: url(:/img/fish.png);\n"
+" border-image: url(:/img/image/fish.png);\n"
 " border-radius:10px;\n"
 " background-color: rgba(0,0,0,0);\n"
 "}\n"
@@ -51,7 +51,7 @@ class Ui_Dialog(object):
 "\n"
 "QPushButton#close_pushButton:hover{\n"
 " background-size: cover;\n"
-" background-image: url(:/icon/close.svg);\n"
+" background-image: url(:/icon/icon/close.svg);\n"
 "}\n"
 "\n"
 "QPushButton#min_pushButton{\n"
@@ -61,7 +61,7 @@ class Ui_Dialog(object):
 "\n"
 "QPushButton#min_pushButton:hover{\n"
 " background-size: cover;\n"
-" background-image: url(:/icon/minimize.svg);\n"
+" background-image: url(:/icon/icon/minimize.svg);\n"
 "}")
         self.verticalLayout_3 = QtWidgets.QVBoxLayout(Dialog)
         self.verticalLayout_3.setObjectName("verticalLayout_3")

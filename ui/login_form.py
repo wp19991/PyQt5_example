@@ -14,9 +14,9 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_Frame(object):
     def setupUi(self, Frame):
         Frame.setObjectName("Frame")
-        Frame.resize(621, 602)
+        Frame.resize(625, 613)
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap(":/icon/app.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon.addPixmap(QtGui.QPixmap(":/icon/icon/首页.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         Frame.setWindowIcon(icon)
         self.widget = QtWidgets.QWidget(Frame)
         self.widget.setGeometry(QtCore.QRect(30, 30, 550, 550))
@@ -36,7 +36,7 @@ class Ui_Frame(object):
 " background-color:rgba(150,123,111,255);\n"
 "}\n"
 "\n"
-"QPushButton#forget_password_pushButton,#register_pushButton{\n"
+"QPushButton#forget_password_pushButton,#register_pushButton,#mysql_pushButton{\n"
 " background-color:rgba(0,0,0,0);\n"
 " border:none;\n"
 " border-bottom:1px solid rgb(179, 179, 179);\n"
@@ -65,7 +65,7 @@ class Ui_Frame(object):
 "\n"
 "QPushButton#close_pushButton:hover{\n"
 " background-size: cover;\n"
-" background-image: url(:/icon/close.svg);\n"
+" background-image: url(:/icon/icon/close.svg);\n"
 "}\n"
 "\n"
 "QPushButton#min_pushButton{\n"
@@ -75,19 +75,20 @@ class Ui_Frame(object):
 "\n"
 "QPushButton#min_pushButton:hover{\n"
 " background-size: cover;\n"
-" background-image: url(:/icon/minimize.svg);\n"
+" background-image: url(:/icon/icon/minimize.svg);\n"
 "}\n"
 "")
         self.widget.setObjectName("widget")
         self.label = QtWidgets.QLabel(self.widget)
         self.label.setGeometry(QtCore.QRect(40, 30, 280, 430))
-        self.label.setStyleSheet("border-image: url(:/img/American_Robin.jpg);\n"
+        self.label.setStyleSheet("border-image: url(:/img/image/American_Robin.jpg);\n"
 "border-top-left-radius:50px;")
         self.label.setObjectName("label")
         self.label_2 = QtWidgets.QLabel(self.widget)
         self.label_2.setGeometry(QtCore.QRect(40, 30, 280, 430))
         self.label_2.setStyleSheet("background-color:rgba(0,0,0,80);\n"
 "border-top-left-radius:50px;")
+        self.label_2.setText("")
         self.label_2.setObjectName("label_2")
         self.label_3 = QtWidgets.QLabel(self.widget)
         self.label_3.setGeometry(QtCore.QRect(270, 30, 240, 430))
@@ -101,7 +102,7 @@ class Ui_Frame(object):
         self.label_4.setMaximumSize(QtCore.QSize(180, 40))
         font = QtGui.QFont()
         font.setFamily("楷体")
-        font.setPointSize(16)
+        font.setPointSize(20)
         font.setBold(True)
         font.setWeight(75)
         self.label_4.setFont(font)
@@ -115,7 +116,7 @@ class Ui_Frame(object):
         self.user_name_lineEdit.setMaximumSize(QtCore.QSize(190, 40))
         font = QtGui.QFont()
         font.setFamily("华文楷体")
-        font.setPointSize(10)
+        font.setPointSize(15)
         self.user_name_lineEdit.setFont(font)
         self.user_name_lineEdit.setStyleSheet("background-color:rgba(0,0,0,0);\n"
 "border:none;\n"
@@ -129,7 +130,7 @@ class Ui_Frame(object):
         self.password_lineEdit.setMaximumSize(QtCore.QSize(190, 40))
         font = QtGui.QFont()
         font.setFamily("华文楷体")
-        font.setPointSize(10)
+        font.setPointSize(15)
         self.password_lineEdit.setFont(font)
         self.password_lineEdit.setStyleSheet("background-color:rgba(0,0,0,0);\n"
 "border:none;\n"
@@ -144,7 +145,7 @@ class Ui_Frame(object):
         self.login_pushButton.setMaximumSize(QtCore.QSize(190, 40))
         font = QtGui.QFont()
         font.setFamily("华文楷体")
-        font.setPointSize(11)
+        font.setPointSize(20)
         font.setBold(True)
         font.setWeight(75)
         self.login_pushButton.setFont(font)
@@ -210,6 +211,7 @@ class Ui_Frame(object):
         self.forget_password_pushButton.setMaximumSize(QtCore.QSize(75, 23))
         font = QtGui.QFont()
         font.setFamily("华文楷体")
+        font.setPointSize(12)
         font.setBold(False)
         font.setWeight(50)
         self.forget_password_pushButton.setFont(font)
@@ -221,18 +223,28 @@ class Ui_Frame(object):
         self.register_pushButton.setMaximumSize(QtCore.QSize(75, 23))
         font = QtGui.QFont()
         font.setFamily("华文楷体")
+        font.setPointSize(12)
         self.register_pushButton.setFont(font)
         self.register_pushButton.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         self.register_pushButton.setObjectName("register_pushButton")
+        self.mysql_pushButton = QtWidgets.QPushButton(self.widget)
+        self.mysql_pushButton.setGeometry(QtCore.QRect(280, 40, 75, 23))
+        self.mysql_pushButton.setMinimumSize(QtCore.QSize(75, 23))
+        self.mysql_pushButton.setMaximumSize(QtCore.QSize(75, 23))
+        font = QtGui.QFont()
+        font.setFamily("华文楷体")
+        font.setPointSize(13)
+        self.mysql_pushButton.setFont(font)
+        self.mysql_pushButton.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.mysql_pushButton.setObjectName("mysql_pushButton")
 
         self.retranslateUi(Frame)
         QtCore.QMetaObject.connectSlotsByName(Frame)
 
     def retranslateUi(self, Frame):
         _translate = QtCore.QCoreApplication.translate
-        Frame.setWindowTitle(_translate("Frame", "Frame"))
+        Frame.setWindowTitle(_translate("Frame", "登录"))
         self.label.setText(_translate("Frame", "TextLabel"))
-        self.label_2.setText(_translate("Frame", "TextLabel"))
         self.label_4.setText(_translate("Frame", "登录界面"))
         self.user_name_lineEdit.setPlaceholderText(_translate("Frame", "用户名"))
         self.password_lineEdit.setPlaceholderText(_translate("Frame", "密码"))
@@ -242,4 +254,5 @@ class Ui_Frame(object):
         self.email_pushButton.setText(_translate("Frame", "k"))
         self.forget_password_pushButton.setText(_translate("Frame", "忘记密码？"))
         self.register_pushButton.setText(_translate("Frame", "用户注册"))
+        self.mysql_pushButton.setText(_translate("Frame", "数据库"))
 from res import app_rc

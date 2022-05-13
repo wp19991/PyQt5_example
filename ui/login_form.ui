@@ -6,16 +6,16 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>621</width>
-    <height>602</height>
+    <width>625</width>
+    <height>613</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Frame</string>
+   <string>登录</string>
   </property>
   <property name="windowIcon">
    <iconset resource="../res/app.qrc">
-    <normaloff>:/icon/app.ico</normaloff>:/icon/app.ico</iconset>
+    <normaloff>:/icon/icon/首页.ico</normaloff>:/icon/icon/首页.ico</iconset>
   </property>
   <widget class="QWidget" name="widget" native="true">
    <property name="geometry">
@@ -43,7 +43,7 @@ QPushButton#login_pushButton:pressed{
  background-color:rgba(150,123,111,255);
 }
 
-QPushButton#forget_password_pushButton,#register_pushButton{
+QPushButton#forget_password_pushButton,#register_pushButton,#mysql_pushButton{
  background-color:rgba(0,0,0,0);
  border:none;
  border-bottom:1px solid rgb(179, 179, 179);
@@ -72,7 +72,7 @@ QPushButton#close_pushButton{
 
 QPushButton#close_pushButton:hover{
  background-size: cover;
- background-image: url(:/icon/close.svg);
+ background-image: url(:/icon/icon/close.svg);
 }
 
 QPushButton#min_pushButton{
@@ -82,7 +82,7 @@ QPushButton#min_pushButton{
 
 QPushButton#min_pushButton:hover{
  background-size: cover;
- background-image: url(:/icon/minimize.svg);
+ background-image: url(:/icon/icon/minimize.svg);
 }
 </string>
    </property>
@@ -96,7 +96,7 @@ QPushButton#min_pushButton:hover{
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/img/American_Robin.jpg);
+     <string notr="true">border-image: url(:/img/image/American_Robin.jpg);
 border-top-left-radius:50px;</string>
     </property>
     <property name="text">
@@ -117,7 +117,7 @@ border-top-left-radius:50px;</string>
 border-top-left-radius:50px;</string>
     </property>
     <property name="text">
-     <string>TextLabel</string>
+     <string/>
     </property>
    </widget>
    <widget class="QLabel" name="label_3">
@@ -161,7 +161,7 @@ border-bottom-right-radius:50px;</string>
     <property name="font">
      <font>
       <family>楷体</family>
-      <pointsize>16</pointsize>
+      <pointsize>20</pointsize>
       <weight>75</weight>
       <bold>true</bold>
      </font>
@@ -203,7 +203,7 @@ border-bottom-right-radius:50px;</string>
     <property name="font">
      <font>
       <family>华文楷体</family>
-      <pointsize>10</pointsize>
+      <pointsize>15</pointsize>
      </font>
     </property>
     <property name="styleSheet">
@@ -241,7 +241,7 @@ padding-bottom:7px;</string>
     <property name="font">
      <font>
       <family>华文楷体</family>
-      <pointsize>10</pointsize>
+      <pointsize>15</pointsize>
      </font>
     </property>
     <property name="styleSheet">
@@ -282,7 +282,7 @@ padding-bottom:7px;</string>
     <property name="font">
      <font>
       <family>华文楷体</family>
-      <pointsize>11</pointsize>
+      <pointsize>20</pointsize>
       <weight>75</weight>
       <bold>true</bold>
      </font>
@@ -482,6 +482,7 @@ padding-bottom:7px;</string>
     <property name="font">
      <font>
       <family>华文楷体</family>
+      <pointsize>12</pointsize>
       <weight>50</weight>
       <bold>false</bold>
      </font>
@@ -517,6 +518,7 @@ padding-bottom:7px;</string>
     <property name="font">
      <font>
       <family>华文楷体</family>
+      <pointsize>12</pointsize>
      </font>
     </property>
     <property name="cursor">
@@ -524,6 +526,40 @@ padding-bottom:7px;</string>
     </property>
     <property name="text">
      <string>用户注册</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="mysql_pushButton">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>40</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>75</width>
+      <height>23</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>75</width>
+      <height>23</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>华文楷体</family>
+      <pointsize>13</pointsize>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string>数据库</string>
     </property>
    </widget>
   </widget>
