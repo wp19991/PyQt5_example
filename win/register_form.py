@@ -55,7 +55,7 @@ class register_form(ui_form, QFrame):
     def github_pushButton_event(self):
         logger.info("跳转到github网站")
         QMessageBox.information(self, "GitHub", "wp19991")
-        QtGui.QDesktopServices.openUrl(QtCore.QUrl("https://gitee.com/wp19991"))
+        QtGui.QDesktopServices.openUrl(QtCore.QUrl("https://github.com/wp19991"))
 
     def phone_pushButton_event(self):
         logger.info("手机号")
